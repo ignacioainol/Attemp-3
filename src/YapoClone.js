@@ -1,10 +1,10 @@
 import React from 'react'
-import { Header } from './components/ui/Header'
+import { AppRouter } from './routers/AppRouter'
 
 export const YapoClone = () => {
     return (
         <div>
-            <Header />
+            <AppRouter />
         </div>
     )
 }

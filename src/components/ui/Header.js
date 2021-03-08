@@ -1,20 +1,31 @@
 import React from 'react'
+import { Link, NavLink, useHistory } from 'react-router-dom'
+
 
 export const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light container">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
+                {/* <a className="navbar-brand" href="#">
+                    
+                </a> */}
+
+                <Link
+                    className="navbar-brand"
+                    to="/"
+                >
                     <img style={{ maxWidth: '12em' }} src="assets/images/home_yapo_logo.png" alt="" />
-                </a>
+                </Link>
 
                 <div>
 
                     <div className="d-flex">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="btn btn-outline-primary" aria-current="page" href="#">Inicia Sesión</a>
-                            </li>
+                            <Link
+                                to="login"
+                                className="btn btn-outline-primary">
+                                Iniciar Sesión
+                            </Link>
                             <li>
                                 &nbsp;
                             </li>
