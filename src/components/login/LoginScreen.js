@@ -3,7 +3,7 @@ import React from 'react'
 export const LoginScreen = () => {
     return (
         <div>
-            Login Screen
+            <h2>Nuevo Inicio de Sesión</h2>
         </div>
     )
 }
